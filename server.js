@@ -32,7 +32,7 @@ app.use(bodyParser.json());
 
 //API
 
-app.get('/',(req,res)=>{res.json(database.users)})
+app.get('/',(req,res)=>{res.json('it is working')})
 app.post('/signin',(req,res)=>{signin.handelsignin(req,res,db,bcrypt)})
 app.post('/register',(req,res)=>{register.handelRegister(req,res,db,bcrypt)})
 app.get('/profile/:id',(req,res)=>{profile.handelprofile(req,res,db)})
