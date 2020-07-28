@@ -32,7 +32,7 @@ app.use(bodyParser.json());
 
 app.get('/',(req,res)=>{res.json('it is working')})
 app.post('/signin',(req,res)=>{signin.handelsignin(req,res,db,bcrypt)})
-app.post('/register',(req,res)=>{Register.handleRegister(req,res,db,bcrypt)})
+app.post('/register',(req,res)=>{Register.handelRegister(req,res,db,bcrypt)})
 app.get('/profile/:id',(req,res)=>{profile.handelprofile(req,res,db)})
 app.put('/image' ,(req,res)=>{image.handelimage(req,res,db)})
 app.post('/imageurl' ,(req,res)=>{image.handeApicall(req,res)})
