@@ -8,7 +8,7 @@ const knex = require('knex'); //DATABASE HANDELLING
 
 //INTERNAL PACKAGE
 
-const register=require('./controllers/Register.js');
+const Register=require('./controllers/Register.js');
 const signin=require('./controllers/signin.js');
 const image=require('./controllers/image.js');
 const profile=require('./controllers/profile.js');
